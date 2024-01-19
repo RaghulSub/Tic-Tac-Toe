@@ -7,35 +7,39 @@
     <meta name="description" content="Game" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="stylesheet" href="gamestyle.css" />
-    <style>
-      table {
-        margin: auto;
-        border: 1px solid;
-      }
-    </style>
   </head>
   <body>
     <div id="gamezone">
-      <div id="player-result"></div>
-      <div id="board">
-        <table id="game-table">
-          <tr class="table-row">
-            <td class="cell" id="_1" onclick="press(0,0)"></td>
-            <td class="cell" id="_2" onclick="press(0,1)"></td>
-            <td class="cell" id="_3" onclick="press(0,2)"></td>
-          </tr>
-          <tr class="table-row">
-            <td class="cell" id="_4" onclick="press(1,0)"></td>
-            <td class="cell" id="_5" onclick="press(1,1)"></td>
-            <td class="cell" id="_6" onclick="press(1,2)"></td>
-          </tr>
-          <tr class="table-row">
-            <td class="cell" id="_7" onclick="press(2,0)"></td>
-            <td class="cell" id="_8" onclick="press(2,1)"></td>
-            <td class="cell" id="_9" onclick="press(2,2)"></td>
-          </tr>
-        </table>
+      <div id="player-result">
+        <div class="score-warpper">
+          <h1 id="player_name_1">Player O:</h1>
+          <h2>Score:</h2>
+          <h2 id="Oscore"></h2>
+        </div>
+        <div class="score-warpper">
+          <h1 id="player_name_2">Player X:</h1>
+          <h2>Score:</h2>
+          <h2 id="Xscore"></h2>
+        </div>
       </div>
+      <table id="game-table">
+        <tr class="table-row">
+          <th class="cell" id="_1" onclick="press(0,0)">O</th>
+          <th class="cell" id="_2" onclick="press(0,1)">O</th>
+          <th class="cell" id="_3" onclick="press(0,2)">X</th>
+        </tr>
+        <tr class="table-row">
+          <th class="cell" id="_4" onclick="press(1,0)">O</th>
+          <th class="cell" id="_5" onclick="press(1,1)">O</th>
+          <th class="cell" id="_6" onclick="press(1,2)">O</th>
+        </tr>
+        <tr class="table-row">
+          <th class="cell" id="_7" onclick="press(2,0)">O</th>
+          <th class="cell" id="_8" onclick="press(2,1)"></th>
+          <th class="cell" id="_9" onclick="press(2,2)">O</th>
+        </tr>
+      </table>
     </div>
+    <script src></script>
   </body>
 </html>

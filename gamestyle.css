@@ -3,27 +3,53 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: rgb(120, 27, 233);
 }
 #gamezone {
   display: flex;
-  flex-basis: auto;
   flex-direction: column;
-  border-style: solid;
-  border-radius: 10px;
-  padding: 50px;
+  border: solid;
+  border-radius: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.25);
 }
-#player-result {
+.score-warpper {
+  float: left;
+  border: solid;
+  margin: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 90px;
+  background-color: rgb(38, 59, 111);
+}
+#game-table {
   display: flex;
-  flex-basis: 10px;
-  font-size: large;
-  border-style: solid;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-top: -30px;
 }
 .cell {
-  display: flex;
-  font-size: 40px;
-  width: 80px;
-  height: 80px;
-  border-style: solid;
+  border: solid;
+  width: 60px;
+  height: 60px;
   border-radius: 5px;
-  float: left;
+  font-family: sans-serif;
+  font-size: 50px;
+  background-color: rgba(188, 255, 136, 0.315);
+}
+.cell:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  border-color: inherit;
+  opacity: 0.6;
+  color: black;
+}
+.cell:active {
+  opacity: 1;
+  color: azure;
+  background-color: black;
 }
