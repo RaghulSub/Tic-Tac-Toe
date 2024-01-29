@@ -11,35 +11,33 @@
   <body>
     <div id="gamezone">
       <div id="player-result">
-        <div class="score-warpper">
+        <div class="score-warpper" id="O-score-warpper">
           <h1 id="player_name_1">Player O:</h1>
-          <h2>Score:</h2>
-          <h2 id="Oscore"></h2>
+          <h2 id="Oscore">Score: 0</h2>
         </div>
-        <div class="score-warpper">
+        <div class="score-warpper" id="X-score-warpper">
           <h1 id="player_name_2">Player X:</h1>
-          <h2>Score:</h2>
-          <h2 id="Xscore"></h2>
+          <h2 id="Xscore">Score: 0</h2>
         </div>
       </div>
       <table id="game-table">
         <tr class="table-row">
-          <th class="cell" id="_1" onclick="press(0,0)">O</th>
-          <th class="cell" id="_2" onclick="press(0,1)">O</th>
-          <th class="cell" id="_3" onclick="press(0,2)">X</th>
+          <th class="cell" id="_1" onclick="press(0,0)"></th>
+          <th class="cell" id="_2" onclick="press(0,1)"></th>
+          <th class="cell" id="_3" onclick="press(0,2)"></th>
         </tr>
         <tr class="table-row">
-          <th class="cell" id="_4" onclick="press(1,0)">O</th>
-          <th class="cell" id="_5" onclick="press(1,1)">O</th>
-          <th class="cell" id="_6" onclick="press(1,2)">O</th>
+          <th class="cell" id="_4" onclick="press(1,0)"></th>
+          <th class="cell" id="_5" onclick="press(1,1)"></th>
+          <th class="cell" id="_6" onclick="press(1,2)"></th>
         </tr>
         <tr class="table-row">
-          <th class="cell" id="_7" onclick="press(2,0)">O</th>
+          <th class="cell" id="_7" onclick="press(2,0)"></th>
           <th class="cell" id="_8" onclick="press(2,1)"></th>
-          <th class="cell" id="_9" onclick="press(2,2)">O</th>
+          <th class="cell" id="_9" onclick="press(2,2)"></th>
         </tr>
       </table>
     </div>
-    <script src></script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1 {
+        font-family: Arial, sans-serif;
+        font-size: 50px;
+        text-align: center;
+        color: white;
+      }
+      label {
+        font-size: 50px;
+        color: azure;
+      }
+    </style>
+    <title>Tic Tac Toe</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Raghul S" />
+    <meta name="description" content="Game" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="entrystyles.css" />
+  </head>
+  <body>
+    <h1>TIC TAC TOE</h1>
+    <form id="registration-form">
+      <div class="registration" style="float: left">
+        <label style="margin-bottom: 20px"><center>O</center></label><br />
+        <input id="playerOname" type="text" class="input-field" />
+      </div>
+      <div class="registration">
+        <label style="margin-bottom: 20px"><center>X</center></label><br />
+        <input id="playerXname" type="text" class="input-field" />
+      </div>
+    </form>
+    <button id="submit-btn" onclick="start_Game(event)">Start Game!</button>
+    <script src="script.js"></script>
+  </body>
+</html>
